@@ -19,8 +19,8 @@ const STORIES = [
   },
 ];
 export default function Stories() {
-  return <div className="bg-black w-full p-10">
-    <h1 className={` text-center text-white ${header}`}>Real stories, real value</h1>
+  return <div className="bg-black w-full p-16">
+    <h1 className={` text-center text-white py-4 ${header}`}>Real stories, real value</h1>
     <div className="flex p-6 gap-3 justify-center">
     {
         STORIES.map((story) => <Card {...story}/>
@@ -39,18 +39,18 @@ interface CardProps {
 const Card  = (props: CardProps) =>  {
   const { title, stats, body } = props;
   return(
-    <div className="bg-white p-4 flex flex-col">
+    <div className="bg-white px-8 py-4 flex flex-col w-[400px] h-[300px] justify-between">
 
-<div className="">
+<div className="py-2">
 <p>{title}</p>
-    <hr className="bg-primary w-4 h-1" />
+    <hr className="bg-primary w-14 mt-1 h-2" />
 </div>
     <p
     className="text-primary text-5xl"
     >{stats}</p>
     <p className="text-xl">{body}</p>
     
-    <div className="">
+    <div className="py-2">
     <Button text="Read their story" type="button" />
     </div>
   </div>
