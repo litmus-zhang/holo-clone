@@ -11,6 +11,9 @@ export default {
       },
       fontFamily: {
         "poppins" : ["Poppins, sans-serif"]
+      },
+      boxShadow: {
+        '3xl': ' 16px 16px rgb(0, 0, 0)',
       }
     },
   },

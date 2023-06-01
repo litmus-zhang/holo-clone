@@ -18,8 +18,8 @@ const REVIEWS = [
 export default function Reviews() {
   return (
     <div>
-      <div className="bg-purple-200 p-10">
-     <div className="flex flex-wrap justify-center gap-3">
+      <div className="bg-purple-200 p-16">
+     <div className="flex flex-wrap justify-center gap-5">
      {
           REVIEWS.map((review, i) => <Card key={i} {...review} />)
         }
@@ -39,7 +39,7 @@ interface ReviewProps {
 const Card = (props: ReviewProps) => {
   const { review, reviewer, company, imageUrl } = props;
   return (
-    <div className="bg-white w-[500px] p-8 shadow-[16px-16px_rgba(0,0,0,0)]">
+    <div className="bg-white w-[500px] p-8 shadow-3xl m-2">
 
       <div className="">
         <svg width="48" height="32" fill="none"><path d="m20.61 7.93-1-4.73C10.57 3.28 2 7.61 2 19v9.8h13.44V18.53H9.66c0-6.1 2.4-9.95 10.95-10.6Zm6.97 20.87h13.44V18.53h-5.78c0-6.1 2.4-9.95 10.95-10.6l-1-4.73c-9.05.08-17.61 4.41-17.61 15.8v9.8Z" fill="#fff" stroke="#00040F"></path>

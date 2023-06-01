@@ -21,7 +21,7 @@ const STORIES = [
 export default function Stories() {
   return <div className="bg-black w-full p-16">
     <h1 className={` text-center text-white py-4 ${header}`}>Real stories, real value</h1>
-    <div className="flex p-6 gap-3 justify-center">
+    <div className="flex flex-wrap p-6 gap-3 justify-center">
     {
         STORIES.map((story) => <Card {...story}/>
         )
@@ -39,7 +39,7 @@ interface CardProps {
 const Card  = (props: CardProps) =>  {
   const { title, stats, body } = props;
   return(
-    <div className="bg-white px-8 py-4 flex flex-col w-[400px] h-[300px] justify-between">
+    <div className="bg-white px-8 py-4 flex flex-col w-[350px] h-[300px] justify-between">
 
 <div className="py-2">
 <p>{title}</p>

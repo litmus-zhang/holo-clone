@@ -31,7 +31,7 @@ const ABOUT = [
 
 export default function About() {
   return (
-    <div>
+    <div className="py-10 my-4">
       <h1 className={`text-center ${header}`}>A solution built to navigate the complexities of IoT</h1>
       <div>
         {
@@ -51,7 +51,7 @@ interface SectionProps {
 const Section = (props: SectionProps) => {
   const { title, body, btnText, imageUrl } = props
   return (
-    <div className="flex p-4">
+    <div className="flex p-4 p">
 
       <div className="border-l-2 border-primary flex flex-col justify-between h-fit gap-4 px-4">
 
