@@ -43,15 +43,15 @@ export default function Connect() {
         <h1 className={`font-light text-xl`}>
         Get started with Hologram today
         </h1>
-        <ul className='flex my-3'>
+        <ul className='flex my-3 gap-2 flex-wrap'>
           {
-            TEXT.map((item)=> (<Bullet {...item} />))
+            TEXT.map((item,i)=> (<Bullet key={i} {...item} />))
           }
         </ul>
       </div>
-      <div className="flex gap-2">
-        <Button text="Sign up free" variant='secondary' type="button" />
-        <Button text="Contact sales" variant='primary' type="button" />
+      <div className="flex gap-2 flex-wrap">
+        <Button text="Sign up free" variant='outline' type="button" />
+        <Button text="Contact sales" variant='solid' type="button" />
       </div>
       </div>
     </div>
@@ -72,8 +72,8 @@ interface  BulletProps {
 const Bullet = (props: BulletProps) =>  {
   const {text} = props
   return (
-    <li className='flex gap-2 items-center'>
-    <svg width="10" height="9" viewBox="0 0 10 9" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.8.1a.5.5 0 0 1 .1.7l-6 8a.5.5 0 0 1-.7535.0535l-3-3a.5.5 0 1 1 .707-.707L3.446 7.7387 9.1.2a.5.5 0 0 1 .7-.1Z" fill="#099FC3"></path></svg>
+    <li className='flex gap-2 items-center p-2'>
+    <svg width="10" height="9" viewBox="0 0 10 9" fill="none"><path fillRule="evenodd" clipRule="evenodd" d="M9.8.1a.5.5 0 0 1 .1.7l-6 8a.5.5 0 0 1-.7535.0535l-3-3a.5.5 0 1 1 .707-.707L3.446 7.7387 9.1.2a.5.5 0 0 1 .7-.1Z" fill="#099FC3"></path></svg>
       <span>{text}</span>
     </li>
   )
@@ -92,7 +92,7 @@ const Card = (props: ConnectProps) => {
       <Button
         type='button'
         text={btnText}
-        variant='secondary'
+        variant='outline'
       />
       </div>
       

@@ -28,9 +28,9 @@ const PARTNERS = [
 export default function Partners() {
   return (
     <div className="bg-black w-full p-20 flex flex-col items-center">
-      <div className="flex flex-wrap items-center gap-4 justify-center my-4">
+      <div className="flex flex-wrap items-center gap-4 justify-center my-6">
         {
-          PARTNERS.map(({ image }, i) => <div className="h-fit w-44" key={i}>
+          PARTNERS.map(({ image }, i) => <div className="h-fit w-36 m-2" key={i}>
             <img src={image} alt="" />
           </div>
           )
@@ -40,7 +40,6 @@ export default function Partners() {
         text="Read our customer stories"
         type="button"
         variant={"white"}
-
       />
     </div>
   )

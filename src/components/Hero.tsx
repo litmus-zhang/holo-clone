@@ -11,8 +11,8 @@ export default function Hero() {
         </h1>
         <p className={text}>Hologram is your trusted partner for connecting and monitoring IoT devices, anywhere in the world. </p>
         <div className='flex gap-2 mt-4'>
-        <Button type='button' text="Try Hologram free" variant="primary" />
-        <Button type='button' text="Contact sales" variant="secondary" />
+        <Button type='button' text="Try Hologram free" variant="solid" />
+        <Button type='button' text="Contact sales" variant="outline" />
         </div>
     </div>
     <div className="w-fit">

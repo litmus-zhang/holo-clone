@@ -23,7 +23,7 @@ export default function Stories() {
     <h1 className={` text-center text-white py-4 ${header}`}>Real stories, real value</h1>
     <div className="flex flex-wrap p-6 gap-3 justify-center">
     {
-        STORIES.map((story) => <Card {...story}/>
+        STORIES.map((story, i) => <Card key={i} {...story}/>
         )
     }
     </div>

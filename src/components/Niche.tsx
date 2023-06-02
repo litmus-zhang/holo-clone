@@ -51,7 +51,7 @@ export default function Niche() {
       <MainCard/>
       </div>
       {
-        NICHES.map(niche => <NicheCard {...niche}/>)
+        NICHES.map((niche,i) => <NicheCard key={i} {...niche}/>)
       }
     </div>
   )
